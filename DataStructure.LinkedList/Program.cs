@@ -1,5 +1,10 @@
 ﻿
+using BenchmarkDotNet.Running;
 using DataStructure.LinkedList;
+
+BenchmarkRunner.Run<CustomLinkedListBenchmarks_ADD>();
+//BenchmarkRunner.Run<CustomLinkedListBenchmarks_REMOVE>();
+return;
 
 CustomLinkedList<int> list = new();
 list.AddFirst(1);
